@@ -1,0 +1,384 @@
+#render {
+    padding-bottom: 70px;
+}
+#render, body, html {
+    background-color: #eee;
+}
+.hiddenImportant {
+    display: none!important;
+}
+.popboxsimple {
+    top: 50%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.popboxsimple_fade {
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 9988;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .6;
+}
+.popboxsimple_content {
+    position: fixed;
+    z-index: 9999;
+    width: 600px;
+    border-radius: 4px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.addrcard_container, .orderconfirm_coupon, .orderconfirm_item, .orderconfirm_item_cheque, .orderconfirm_item_title, .orderconfirm_settle {
+    width: 1086px;
+    background-color: #fff;
+}
+.orderconfirm_item_cheque {
+    margin: 0 auto;
+    padding: 30px;
+}
+.orderconfirm_item_title {
+    height: 70px;
+    margin: 30px auto 8px;
+    padding: 0 30px;
+    font: normal normal normal 18px/70px Rubik-Regular,PingFang SC,PingHei,PingFangHei,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,STHeiTi,sans-serif;
+    color: #333;
+    box-shadow: 0 0 2px 8px hsla(0,0%,96%,.6);
+}
+.addrcard_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: flex;
+    -webkit-box-pack: left;
+    -ms-flex-pack: left;
+    justify-content: left;
+    -webkit-box-align: left;
+    -ms-flex-align: left;
+    -moz-flex-align: left;
+    -webkit-align-items: left;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 30px 30px 0;
+}
+.user-addr-info {
+    margin-left: 45px;
+    margin-bottom: 30px;
+}
+.add-addr {
+    text-align: center;
+    padding-top: 65px;
+}
+.user-addr-info {
+    position: relative;
+    box-sizing: border-box;
+    height: 200px;
+    width: 300px;
+    border: 1px solid #ccccd6;
+    border-radius: 4px;
+    moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    float: left;
+    color: #999;
+    font-size: 16px;
+    overflow: hidden;
+}
+.add-addr p {
+    line-height: 30px;
+    font-size: 16px;
+    color: #ccccd6;
+}
+.iconGray {
+    color: #ccccd6;
+    background-image: #ccccd6;
+    background: -webkit-linear-gradient(#eeeef3,#ccccd6);
+    -webkit-background-clip: text;
+}
+.iconBlue, .iconGray {
+    font-family: Glyphter;
+    font-size: 18px;
+    -webkit-text-fill-color: transparent;
+}
+.add-addr p .iconGray {
+    font-size: 26px;
+}
+.orderconfirm_item {
+    margin: 0 auto;
+    padding: 30px;
+}
+.orderconfirm_item > p.item--active, .orderconfirm_item > p:active, .orderconfirm_item > p:focus, .orderconfirm_item > p:hover {
+    border: 1px solid #55a0ff;
+    color: #55a0ff;
+}
+.orderconfirm_item > p {
+    display: inline-block;
+    height: 50px;
+    margin-right: 24px;
+    padding: 0 28px;
+    border: 1px solid #ccccd6;
+    border-radius: 4px;
+    font: normal normal normal 16px/50px Rubik-Regular,PingFang SC,PingHei,PingFangHei,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,STHeiTi,sans-serif;
+    color: #ccccd6;
+    text-align: center;
+    cursor: pointer;
+}
+.orderconfirm_item {
+    margin: 0 auto;
+    padding: 30px;
+}
+.orderconfirm_item > p.orderconfirm_time_limit {
+    width: 140px;
+    height: 70px;
+    text-align: left;
+    font: normal normal normal 16px Rubik-Regular,PingFang SC,PingHei,PingFangHei,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,STHeiTi,sans-serif;
+}
+.orderconfirm_item > p.orderconfirm_time_limit > span {
+    display: inline-block;
+    width: 120px;
+    font: normal normal normal 14px Rubik-Regular,PingFang SC,PingHei,PingFangHei,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,STHeiTi,sans-serif;
+}
+.orderconfirm_item > p.orderconfirm_time_limit > span:first-child {
+    margin-top: 18px;
+}
+.orderconfirm_cheque_title_prefix {
+    font: normal normal normal 16px/48px Rubik-Regular,PingFang SC,PingHei,PingFangHei,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,STHeiTi,sans-serif;
+    color: #333;
+}
+.orderconfirm_input_radio {
+    display: inline-block;
+    position: relative;
+    vertical-align: sub;
+}
+input.orderconfirm_refresh_radio:checked {
+    border: none;
+}
+.orderconfirm_refresh_radio {
+    z-index: 99;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    margin: 0;
+    cursor: pointer;
+    vertical-align: bottom;
+    background: #fff;
+    border: 1px solid #ccccd6;
+    border-radius: 50%;
+    box-sizing: border-box;
+    position: relative;
+    background-color: transparent;
+}
+.orderconfirm_refresh_radio:active, .orderconfirm_refresh_radio:focus, .orderconfirm_refresh_radio:hover {
+    outline: none;
+}
+.iconBlue {
+    font-size: 22px !important;
+}
+.iconBlue {
+    color: #55a0ff;
+    background-image: #55a0ff;
+    background: -webkit-linear-gradient(#64c8ff,#7d7dff);
+    -webkit-background-clip: text;
+}
+input.orderconfirm_refresh_radio:checked + label {
+    display: inline;
+}
+.orderconfirm_radio {
+    z-index: 89;
+    position: absolute;
+    top: 0;
+    left: -4px;
+    vertical-align: middle;
+    margin-left: 4px;
+    display: none;
+}
+.cheque_label {
+    margin: 0 40px 0 6px;
+    font: normal normal normal 16px/48px Rubik-Regular,PingFang SC,PingHei,PingFangHei,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,STHeiTi,sans-serif;
+    color: #ccccd6;
+}
+.cartbox_brief {
+    width: 1146px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.cartbox_brief_headbar {
+    padding-left: 24px;
+    height: 50px;
+    font: normal normal normal 14px/50px Rubik-Regular,PingFang SC,PingHei,PingFangHei,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,STHeiTi,sans-serif;
+    color: #666;
+    background-color: #f9f9fc;
+}
+.cbt_name {
+    width: 50%;
+    text-align: left;
+}
+.cartbox_brief_headbar_item {
+    display: inline-block;
+}
+.cbt_num, .cbt_op, .cbt_price, .cbt_total {
+    padding-left: 20px;
+}
+.cbt_price {
+    width: 15%;
+    text-align: center;
+}
+.cbt_num, .cbt_total {
+    width: 14%;
+    text-align: center;
+}
+.cartbox_brief_main {
+    display: table;
+    height: 130px;
+    padding: 20px 30px 0;
+    width: 1087px;
+}
+.cool_footer_split_line {
+    height: 1px;
+    background: #eee;
+    border: 0;
+    overflow: hidden;
+    margin: 0;
+}
+.cartbox_brief_content_item, .cartbox_brief_num_container {
+    display: table-cell;
+    height: 130px;
+    vertical-align: middle;
+}
+.cartbox_brief_desc {
+    width: 110px;
+    text-align: left;
+}
+.cartbox_brief_img {
+    width: 90px;
+    height: 90px;
+}
+.cartbox_brief_tablewrap {
+    display: table-cell;
+    vertical-align: middle;
+    height: 130px;
+}
+.cartbox_brief_title {
+    width: 515px;
+    text-align: left;
+}
+.cartbox_brief_name {
+    display: block;
+    margin-bottom: 6px;
+    font: normal normal normal 14px Rubik-Regular,PingFang SC,PingHei,PingFangHei,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,STHeiTi,sans-serif;
+}
+.cartbox_brief_price {
+    width: 180px;
+    text-align: left;
+}
+.cartbox_brief_content_item, .cartbox_brief_num_container {
+    display: table-cell;
+    height: 130px;
+    vertical-align: middle;
+}
+.cartbox_brief_newprice, .cartbox_brief_num, .cartbox_brief_totalprice {
+    font: normal normal normal 16px Rubik-Regular,PingFang SC,PingHei,PingFangHei,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,STHeiTi,sans-serif;
+    color: #4a4a4a;
+}
+.cartbox_brief_addsub {
+    width: 180px;
+    text-align: left;
+}
+.cartbox_brief_num {
+    display: inline-block;
+    margin: 0 36px;
+}
+.cartbox_brief_totalprice {
+    width: 80px;
+    text-align: left;
+}
+.orderconfirm_settle {
+    text-align: right;
+    margin: 0 auto;
+    padding: 30px;
+}
+.orderconfirm_settle_header {
+    display: inline-block;
+    width: 120px;
+    text-align: left;
+}
+.orderconfirm_settle_detail, .orderconfirm_settle_title {
+    display: block;
+    margin-bottom: 18px;
+    font: normal normal normal 16px/22px Rubik-Regular,PingFang SC,PingHei,PingFangHei,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,STHeiTi,sans-serif;
+    color: #4a4a4a;
+}
+.orderconfirm_settle_content {
+    display: inline-block;
+    width: 140px;
+    text-align: right;
+}
+.orderconfirm_settle_detail {
+    text-align: right;
+}
+.orderconfirm_settle_detail {
+    text-align: right;
+}
+.orderconfirm_settle_forpay {
+    margin-top: 48px;
+}
+.settle_forpay_title {
+    color: #4a4a4a;
+}
+.settle_forpay_detail, .settle_forpay_title {
+    font: normal normal normal 16px Rubik-Regular,PingFang SC,PingHei,PingFangHei,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,STHeiTi,sans-serif;
+}
+.settle_forpay_detail {
+    display: inline-block;
+    color: #55a0ff;
+    margin-right: 56px;
+}
+.settle_forpay_btn {
+    height: 50px;
+    padding: 0 24px;
+    border: none;
+    border-radius: 4px;
+    background: #39a9ff;
+    background: -webkit-gradient(linear,0 50%,100% 50%,from(#7384ff),to(#36abff));
+    background: -webkit-linear-gradient(left,#7384ff,#39a9ff 100%,#36abff);
+    background: linear-gradient(left,#7384ff,#39a9ff 100%,#36abff);
+    font: normal normal normal 16px Rubik-Regular,PingFang SC,PingHei,PingFangHei,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,STHeiTi,sans-serif;
+    color: #fff;
+}
+.settle_forpay_btn:hover {
+    background: #39a9ff;
+    background: -webkit-gradient(linear,0 50%,100% 50%,from(#36abff),to(#7384ff));
+    background: -webkit-linear-gradient(left,#36abff,#39a9ff 50%,#7384ff);
+    background: linear-gradient(left,#36abff,#39a9ff 50%,#7384ff);
+}
+
+/* ========================  添加地址的界面样式开始============= */
+#ww{
+	background-color: #eee;
+}
+
+.addreditbox_content {
+    position: relative;
+    z-index: 9999;
+    background: #fff;
+}
+.addreditbox .addreditbox_title {
+    height: 70px;
+    line-height: 70px;
+    color: #333;
+    font-size: 18px;
+    padding: 0 30px;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,.05);
+    position: relative;
+}
+.addreditbox .addreditbox_title .title-text {
+    display: inline-block;
+}

@@ -1,0 +1,715 @@
+	#header{
+		width: 100%;
+		height: 70px;
+		min-width: 1146px;
+		position: relative;
+		background: #666;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		z-index: 998;
+	}
+	.header_body {
+	    width: 100%;
+	    height: 100%;
+	    position: absolute;
+	    background: url("/kpImg/mask.png") no-repeat;
+	    z-index: 1;
+	}
+	.header_center {
+	    width: 1146px;
+	    height: 100%;
+	    margin: 0 auto;
+	}
+	.header_logo {
+	    width: 100px;
+	    height: 100%;
+	    background: url("/kpImg/logo@1x.png") 0 50%;
+	    background-repeat: no-repeat;
+	    float: left;
+	}
+	.header_account {
+	    cursor: pointer;
+	    float: right;
+	    height: 100%;
+	    line-height: 70px;
+	    padding: 0 23px;
+	    position: relative;
+	}
+	.header_account:hover .header_account_afterSale, .header_account:hover .header_account_hover, .header_account:hover .header_account_myCoupon, .header_account:hover .header_account_myOrder, .header_account:hover .header_account_signOut {
+	    display: block;
+	}
+	
+	i{
+	    display: inline-block;
+		width: 20px;
+		height: 18px;
+		background: url("/kpImg/icon-min.png")no-repeat;
+	}
+	.header_account_hover {
+	    -webkit-transition: all .4s ease;
+	    transition: all .4s ease;
+	    font-family: Rubik-Regular,PingFang SC,Helvetica,Arial,Hiragino Sans GB,Microsoft Yahei,\\5FAE���ź�,STHeiti,\\534E��ϸ��,sans-serif;
+	    display: none;
+	    position: absolute;
+	    padding: 10px;
+	    background: #fff;
+	    top: 70px;
+	    right: 0;
+	    border-radius: 4px;
+	    -ms-box-shadow: 0 1px 12px 0 rgba(0,0,0,.15);
+	    -o-box-shadow: 0 1px 12px 0 rgba(0,0,0,.15);
+	    box-shadow: 0 1px 12px 0 rgba(0,0,0,.15);
+	}
+	.header_account_hover > a {
+	    display: block;
+	    width: 110px;
+	    line-height: 40px;
+	    font-size: 12px;
+	    text-align: center;
+	 /* text-indent: 22px; */
+	    color: #666;
+	    position: relative;
+	    font-weight: 700;
+	}
+	.header_account_hover a i{
+		position: relative;
+		top: 5px;
+	}
+	.header_link {
+	    color: #999;
+	    background: url("/kpImg/icon-min.png") no-repeat;
+	    margin-top: 24px;
+	}
+	.header_account_hover > a:hover {
+	    color: #000;
+	    background: #ebebeb;
+	}
+	.header_cart, .header_cart > a > i, .header_cart > i {
+	    -webkit-transition: all .4s ease;
+	    transition: all .4s ease;
+	}
+	.header_cart {
+	    cursor: pointer;
+	    float: right;
+	    height: 100%;
+	    line-height: 70px;
+	    padding: 0 23px;
+	    position: relative;
+	}
+	.header_cart_number {
+	    z-index: 3;
+	    top: 28px;
+	    left: 48px;
+	    line-height: 16px;
+	    font-size: 12px;
+	    color: #fff;
+	    height: 16px;
+	    padding: 0 6px;
+	    background: #fc372c;
+	    border-radius: 8px;
+	    text-align: center;
+	    font-weight: 700;
+	}
+	.header_cart_hover, .header_cart_number {
+	    font-family: Rubik-Regular,PingFang SC,Helvetica,Arial,Hiragino Sans GB,Microsoft Yahei,\\5FAE���ź�,STHeiti,\\534E��ϸ��,sans-serif;
+	    position: absolute;
+	   /* display: none; */
+	}
+	.header_cart_hover {
+	    -webkit-transition: all .4s ease;
+	    transition: all .4s ease;
+	    top: 70px;
+	    padding: 10px;
+	    -ms-box-shadow: 0 1px 12px 0 rgba(0,0,0,.15);
+	    -o-box-shadow: 0 1px 12px 0 rgba(0,0,0,.15);
+	    box-shadow: 0 1px 12px 0 rgba(0,0,0,.15);
+	    background: #fff;
+	    right: 0;
+	    border-radius: 4px;
+	    width:280px;
+	}
+	.header_cart_hover_list {
+	    max-height: 340px;
+	    overflow-y: auto;
+	    display:none;
+	}.header_cart_hover_list_item {
+	    height: 64px;
+	    padding: 10px;
+	    position: relative;
+	    <!-- display:none; -->
+	}
+	.header_cart_hover_list_item_image {
+	    position: relative;
+	    float: left;
+	    width: 62px;
+	    height: 62px;
+	    border: 1px solid #eee;
+	    border-radius: 4px;
+	    overflow: hidden;
+	}
+	.header_cart_hover_list_item_image > img {
+	    overflow: hidden;
+	    width: 100%;
+	    height: 100%;
+	}
+	.header_cart_hover_list_item_array {
+	    font-family: Rubik-Regular,PingFang SC,Helvetica,Arial,Hiragino Sans GB,Microsoft Yahei,\\5FAE���ź�,STHeiti,\\534E��ϸ��,sans-serif;
+	    float: left;
+	    color: #666;
+	    font-size: 13px;
+	    margin-left: 20px;
+	}
+	.header_cart_hover_list_item_array > li {
+	    line-height: 21px;
+	    width: 150px;
+	    font-weight: 700;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	    white-space: nowrap;
+	}
+	.header_cart_hover_list_item_array_price {
+	    color: #2485ff;
+	    font-size: 14px;
+	    line-height: 22px;
+	}
+	.header_cart_hover_list_item_array_name > a {
+	    color: #666;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	    white-space: nowrap;
+	}
+	.header_cart_hover_list_item_array_number {
+	    color: #666;
+	}
+	.header_cart:hover .header_cart_empty, .header_cart:hover .header_cart_hover {
+	    display: block;
+	}
+	.header_search {
+	    cursor: pointer;
+	    float: right;
+	    height: 100%;
+	    line-height: 70px;
+	    padding: 0 23px;
+	    position: relative;
+	    display:block;
+	    <!--background: url("/kpImg/icon-min.png") no-repeat; -->
+	    
+	}
+	.header_search:hover {
+	    <!--background: url("/kpImg/icon-min.png") no-repeat; -->
+	    
+	}
+	.header_search, .header_search > a > i, .header_search > i {
+	    -webkit-transition: all .4s ease;
+	    transition: all .4s ease;
+	}
+	.header_search > a > i, .header_search > i {
+	    font-family: Material Icons;
+	    color: #999;
+	    font-size: 22px;
+	    font-style: normal;
+	    margin-top:20px;
+	}
+	.header_cart_hover_list_item_delete {
+	    font-family: Material Icons;
+	    font-size: 18px;
+	    color: #ddd;
+	    line-height: 18px;
+	    position: absolute;
+	    top: 33px;
+	    right: 8px;
+	}
+	.header_cart_hover_rowTwo {
+	    font-family: Rubik-Regular,PingFang SC,Helvetica,Arial,Hiragino Sans GB,Microsoft Yahei,\\5FAE���ź�,STHeiti,\\534E��ϸ��,sans-serif;
+	    width: 260px;
+	    padding: 10px;
+	    padding-top: 20px;
+	    border-top: 1px solid #eee;
+	    font-weight: 700;
+	    position: relative;
+	}
+	.header_cart_hover_rowTwo_total {
+	    color: #2485ff;
+	    font-size: 15px;
+	    line-height: 50px;
+	    height: 50px;
+	}
+	.header_cart_hover_rowTwo_goToSettlement {
+	    color: #fff;
+	    position: absolute;
+	    border-radius: 4px;
+	    height: 50px;
+	    width: 110px;
+	    background: #2485ff;
+	    font-size: 16px;
+	    font-weight: 700;
+	    text-align: center;
+	    line-height: 50px;
+	    right: 10px;
+	    top: 20px;
+	}
+	.header_cart_hover_rowTwo_goToSettlement:hover {
+	    background: #006af0;
+	    color: #fff !important;
+	}
+	a:focus, a:hover {
+	    color: #2a6496;
+	    text-decoration: underline;
+	}
+	a:active, a:hover {
+	    outline: 0;
+	}
+	.header_cart_hover_rowTwo_total::before {
+	
+	    content: "\5546\54C1\6570\91CF: ";
+	    color: #666;
+	}
+	.header_cart:hover .header_cart_empty, .header_cart:hover .header_cart_hover {
+	    display: block;
+	}
+	.header_nav {
+	    -webkit-transition: all .4s ease;
+	    transition: all .4s ease;
+	    -webkit-font-smoothing: auto;
+	    font-smoothing: auto;
+	    font-weight: 700;
+	    -moz-user-select: none;
+	    -webkit-user-select: none;
+	    -ms-user-select: none;
+	    user-select: none;
+	    cursor: pointer;
+	    color: #999;
+	    font-size: 14px;
+	    float: right;
+	    line-height: 70px;
+	    padding: 0 23px;
+	    display: block;
+	}
+	.header_nav .cool_mobile_hover_box {
+	    line-height: 25px;
+	    position: absolute;
+	    top: 70px;
+	    left: 0;
+	    height: 0;
+	    width: 100%;
+	    opacity: 0;
+	    background: #fff;
+	    box-shadow: 0 2px 6px 0 rgba(0,0,0,.05);
+	}
+	.header_nav:hover {
+	    color: #fff;
+	}
+	a:active, a:hover {
+	    outline: 0;
+	}
+	a:focus, a:hover {
+	    color: #2a6496;
+	    text-decoration: underline;
+	}
+	.header_nav:hover {
+	    color: #fff;
+	    background: #000;
+	}
+	.header_nav .cool_mobile_hover_box {
+	    line-height: 25px;
+	    position: absolute;
+	    top: 70px;
+	    left: 0;
+	    height: 0;
+	    width: 100%;
+	    opacity: 0;
+	    background: #fff;
+	    box-shadow: 0 2px 6px 0 rgba(0,0,0,.05);
+	}
+	.header_search:hover > i {
+	    color: #fff;
+	}
+	.header_search:hover {
+	    background: #000;
+	}
+	.yes:hover{
+		display:block;
+	}
+	/* ---------->>>>>>>>>>  header��ʽ����      <<<<<<<<<<<--------------- */
+	
+	/* ---------->>>>>>>>>>   main��ʽ��ʼ      <<<<<<<<<<<--------------- */
+	#main{background-color: #eee;width: 100%;padding-bottom: 92px;}
+	.cartbox_common_headline {
+	    height: 70px;
+	    margin-top: 20px;
+	    margin-left: 6px;
+	    margin-right: 6px;
+	    padding-left: 30px;
+	    font: normal normal normal 18px/70px Rubik-Regular,PingFang SC,PingHei,PingFangHei,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,STHeiTi,sans-serif;
+	    color: #333;
+	    background-color: #fff;
+	    box-shadow: 0 0 2px 8px hsla(0,0%,96%,.6);
+	}
+	.cartbox_separate_bg {
+	    height: 20px;
+	    width: 100%;
+	    background: #f5f8ff;
+	}
+	.cartbox_common_nonself_headling {
+	    background: #fbfbfb;
+	    box-shadow: inset 0 -1px 0 0 rgba(0,0,0,.05);
+	    border-radius: 4px 4px 0 0;
+	    height: 40px;
+	    font-size: 15px;
+	    color: #666;
+	    line-height: 40px;
+	    padding-left: 30px;
+	    width: 1116px;
+	}
+	.cartbox_common {
+	    width: 1146px;
+	    margin: 0 auto;
+	    background-color: #fff;
+	}
+	/*  ----------��������ʽ��ʼ-------  */
+	.cartbox_common_headbar {
+	    padding-left: 24px;
+	    height: 48px;
+	    font: normal normal normal 14px/50px Rubik-Regular,PingFang SC,PingHei,PingFangHei,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,STHeiTi,sans-serif;
+	    color: #666;
+	    background-color: #fbfbfb;
+	    box-shadow: inset 0 1px 0 0 rgba(0,0,0,.05),inset 0 -1px 0 0 rgba(0,0,0,.05);
+	}
+	.cartbox_common_headbar_item {
+	    display: inline-block;
+	    height: 48px;
+	}
+	
+	/* ����-->>��Ʒ�����ʽ  */
+	.cbt_name {
+	    width: 45%;
+	    padding-left: 12px;
+	}
+	
+	/*    ����-->>��Ʒ�۸�С�ơ���������ʽ       */
+	.cbt_num, .cbt_op, .cbt_price, .cbt_total {
+	    text-align: left;
+	    padding-left: 20px;
+	}
+	.cbt_price {
+	    width: 15%;
+	}
+	.cbt_num, .cbt_total {
+	    width: 12%;
+	}
+	/*  ----------��������ʽ����-------  */
+	
+	/* ------>>> ���ﳵ����ʽ��ʼ <<<------- */
+	.cartbox_common_main {
+	    display: table;
+	    height: 128px;
+	    padding: 20px 30px 0;
+	    width: 1086px;
+	}
+	.cartbox_common_bg {
+	    box-shadow: inset 0 -1px 0 0 rgba(0,0,0,.05);
+	}
+	.cartbox_common_content_item {
+	    display: table-cell;
+	    height: 130px;
+	    vertical-align: middle;
+	}
+	.cartbox_common_chkbox {
+	    width: 30px;
+	    text-align: center;
+	    position: relative;
+	    z-index: 79;
+	}
+	.refresh_checkbox {
+	    z-index: 99;
+	    -webkit-appearance: none;
+	    appearance: none;
+	    width: 22px;
+	    height: 22px;
+	    margin: 0;
+	    cursor: pointer;
+	    vertical-align: bottom;
+	    background: #fff;
+	    border: 1px solid #ccccd6;
+	    border-radius: 50%;
+	    box-sizing: border-box;
+	    position: relative;
+	    background-color: transparent;
+	    opacity: 0;
+	}
+	.refresh_checkbox {
+	    z-index: 99;
+	    -webkit-appearance: none;
+	    appearance: none;
+	    width: 22px;
+	    height: 22px;
+	    margin: 0;
+	    cursor: pointer;
+	    vertical-align: bottom;
+	    background: #fff;
+	    border: 1px solid #ccccd6;
+	    border-radius: 50%;
+	    box-sizing: border-box;
+	    position: relative;
+	    background-color: transparent;
+	}
+	input[type="checkbox"] {
+	    border-style: solid;
+	    border-radius: 30px;
+	}
+	input.refresh_checkbox[type="checkbox"]:checked {
+	    border: none;
+	}
+	.cartbox_common_icon_right {
+	    z-index: 89;
+	    position: absolute;
+	    left: 0;
+	    vertical-align: middle;
+	    margin-left: 4px;
+	    width: 22px;
+	    height: 22px;
+	    display: inline-block;
+	}
+	label {
+	    display: inline-block;
+	    background: url("/kpImg/false.png")no-repeat;
+	 }
+	input.refresh_checkbox[type="checkbox"]:checked + label {
+    	background: url("/kpImg/true.png")no-repeat;
+    }
+    input.refresh_checkbox[type="checkbox"]:checked + label {
+	    display: inline;
+	}
+	.cartbox_common_desc {
+	    width: 110px;
+	    text-align: left;
+	}
+	.cartbox_common_img, .cartbox_common_img_nostock {
+	    width: 90px;
+	    height: 90px;
+	    margin: 16px;
+	    text-align: center;
+	}
+	.cartbox_common_img {
+	    border: 1px solid #eee;
+	    border-radius: 4px;
+	}
+	.hidden {
+	    display: none;
+	}
+	.cartbox_common_img_nostock {
+	    border: 1px solid #ccccd6;
+	}
+	.cartbox_common_img_nostock > span {
+	    margin-top: 72px;
+	    display: inline-block;
+	    width: 90px;
+	    font: normal normal normal 12px Rubik-Regular,PingFang SC,PingHei,PingFangHei,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,STHeiTi,sans-serif;
+	    color: #fff;
+	    background-color: #000;
+	    opacity: .3;
+	}
+	
+	.cartbox_common_title {
+	    width: 360px;
+	    text-align: left;
+	}
+	.cartbox_common_tablewrap {
+	    display: table-cell;
+	    vertical-align: middle;
+	    height: 130px;
+	}
+	.cartbox_common_name {
+	    display: block;
+	    margin-bottom: 6px;
+	    font: normal normal normal 14px Rubik-Regular,PingFang SC,PingHei,PingFangHei,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,STHeiTi,sans-serif;
+	    color: #333;
+	}
+	.cartbox_common_price {
+	    width: 160px;
+	    text-align: left;
+	}
+	.cartbox_common_newprice, .cartbox_common_num, .cartbox_common_oldprice, .cartbox_common_totalprice {
+	    font: normal normal normal 16px/18px Rubik-Regular,PingFang SC,PingHei,PingFangHei,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,STHeiTi,sans-serif;
+	    color: #4a4a4a;
+	}
+	.cartbox_common_newprice {
+	    margin-bottom: 6px;
+	}
+	.cartbox_common_addsub {
+	    width: 182px;
+	    text-align: left;
+	}
+	.cartbox_common_addsub_box {
+	    width: 110px;
+	    height: 28px;
+	    border: 1px solid #ccc;
+	    border-radius: 4px;
+	    margin-left: 15px;
+	}
+	
+	.cartbox_common_btn {
+	    display: inline-block;
+	    line-height: 130px;
+	    text-align: center;
+	    position: relative;
+	    background-color: transparent;
+	    cursor: pointer;
+	}
+	.cartbox_common_addsub_box .cartbox_common_btn {
+	    line-height: 22px;
+	}
+	.cartbox_common_addsub_box > .box_item {
+	    width: 32.5%;
+	    display: inline-block;
+	    height: 28px;
+	    line-height: 28px;
+	    text-align: center;
+	    float: left;
+	    color: #ccc;
+	    font-size: 16px;
+	}
+	.cartbox_common_num {
+	    display: inline-block;
+	    line-height: 28px;
+	}
+	.cartbox_common_addsub_box .cartbox_common_num {
+	    color: #111;
+	    border-left: 1px solid #ccc;
+	    border-right: 1px solid #ccc;
+	}
+	.cartbox_common_addsub_box > .box_item:hover {
+	    color: #111;
+	}
+	
+	.cartbox_common_totalprice {
+	    width: 145px;
+	    text-align: left;
+	}
+	/* >>> ���ﳵ����ʽ���� <<< */
+	
+	/*  -- ���ﳵ��������ʽ��start-- */
+	.cartbox_settle {
+	    width: 1146px;
+	    margin: 0 auto;
+	    background-color: #fff;
+	    box-shadow: 0 0 2px 8px hsla(0,0%,96%,.6);
+	}
+	.cartbox_settle_main {
+	    display: table;
+	    height: 110px;
+	    padding: 0 30px;
+	}
+	.cartbox_settle_content_item {
+	    display: table-cell;
+	    height: 110px;
+	    vertical-align: middle;
+	}
+	.cartbox_settle_chkbox {
+	    width: 30px;
+	    text-align: center;
+	    position: relative;
+	    z-index: 79;
+	}
+	
+	
+	.iconBlue {
+	    color: #55a0ff;
+	    background-image: #55a0ff;
+	    background: -webkit-linear-gradient(#64c8ff,#7d7dff);
+	    -webkit-background-clip: text;
+	}
+	.iconBlue, .iconGray {
+	    font-family: Glyphter;
+	    font-size: 22px;
+	    -webkit-text-fill-color: transparent;
+	}
+	.iconBlue, .iconGray {
+	    font-family: Glyphter;
+	    font-size: 18px;
+	    -webkit-text-fill-color: transparent;
+	}
+	
+	.cartbox_settle_chkbox > label {
+	    top: 44px;
+	}
+	.cartbox_settle_desc {
+	    width: 600px;
+	    padding-left: 52px;
+	    text-align: left;
+	}
+	.cartbox_settle_name {
+	    display: block;
+	}
+	.cartbox_settle_allchoose {
+	    margin-right: 60px;
+	}
+	.cartbox_settle_allchoose, .cartbox_settle_name {
+	    font: normal normal normal 14px Rubik-Regular,PingFang SC,PingHei,PingFangHei,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,STHeiTi,sans-serif;
+	}
+	.cartbox_settle_choosen_num, .cartbox_settle_size {
+	    color: #55a0ff;
+	    margin: 0 6px;
+	    font: normal normal normal 16px Rubik-Regular,PingFang SC,PingHei,PingFangHei,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,STHeiTi,sans-serif;
+	}
+	.cartbox_settle_price {
+	    width: 300px;
+	    text-align: right;
+	    padding-right: 60px;
+	}
+	.cartbox_settle_sumprice_title {
+	    color: #333;
+	    font: normal normal normal 16px Rubik-Regular,PingFang SC,PingHei,PingFangHei,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,STHeiTi,sans-serif;
+	    margin-bottom: 5px;
+	}
+	.cartbox_settle_sumprice {
+	    font: normal normal normal 22px Rubik-Regular,PingFang SC,PingHei,PingFangHei,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,STHeiTi,sans-serif;
+	    color: #55a0ff;
+	}
+	cartbox_settle_discount {
+	    color: #999;
+	    font: normal normal normal 12px Rubik-Regular,PingFang SC,PingHei,PingFangHei,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,STHeiTi,sans-serif;
+	}
+	.cartbox_settle_btn {
+	    display: inline-block;
+	    border: none;
+	    text-align: center;
+	    width: 120px;
+	    height: 50px;
+	    margin-top: 30px;
+	    border-radius: 4px;
+	    color: #fff;
+	    cursor: pointer;
+	    font: normal normal normal 16px/50px Rubik-Regular,PingFang SC,PingHei,PingFangHei,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,STHeiTi,sans-serif;
+	    background: #39a9ff;
+	    background: -webkit-gradient(linear,0 50%,100% 50%,from(#7384ff),to(#36abff));
+	    background: -webkit-linear-gradient(left,#7384ff,#39a9ff 100%,#36abff);
+	    background: linear-gradient(left,#7384ff,#39a9ff 100%,#36abff);
+	}
+	.cartbox_common_aside {
+	    padding: 0 6px 0 84px;
+	    height: 80px;
+	}
+	.cartbox_common_aside_btn {
+	    display: inline-block;
+	    width: 22px;
+	    height: 22px;
+	    margin: 0 54px 0 34px;
+	    text-align: center;
+	    position: relative;
+	    vertical-align: middle;
+	    background-color: transparent;
+	    padding-top: 3px;
+	    background: url("/kpImg/add.png") no-repeat;
+	}
+	.cartbox_common_aside_desc {
+	    font: normal normal normal 14px/80px Rubik-Regular,PingFang SC,PingHei,PingFangHei,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,STHeiTi,sans-serif;
+	    margin-right: 20px;
+	}
+	.cartbox_common_linkcolor {
+	    color: #55a0ff;
+	    cursor: pointer;
+	}
+	

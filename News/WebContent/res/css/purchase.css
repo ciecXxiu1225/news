@@ -1,0 +1,417 @@
+@CHARSET "UTF-8";
+<!-- 内部样式表 -->
+		<style type="text/css">
+			/* ---------->>>>>>>>>>  header样式开始      <<<<<<<<<<<--------------- */
+			
+			/* ---------->>>>>>>>>>  header样式结束      <<<<<<<<<<<--------------- */
+			
+			/* ---------->>>>>>>>>>   main样式开始      <<<<<<<<<<<--------------- */
+			.cartbox_common {
+			    width: 1146px;
+			    height: 500px;
+			    margin: 0 auto;
+			    background-color: #fff;
+			}
+			.cartbox_common_headline {
+			    height: 40px;
+			    margin-top: 20px;
+			    margin-left: 6px;
+			    margin-right: 6px;
+			    padding-left: 30px;
+			    font: normal normal normal 18px/70px Rubik-Regular,PingFang SC,PingHei,PingFangHei,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,STHeiTi,sans-serif;
+			    color: #393939;
+			    background-color: #fff;
+			    box-shadow: 0 0 2px 8px hsla(0,0%,96%,.6);
+			}
+			
+			
+			.cartbox_common {
+			    width: 1024px;
+			    margin: 0 auto;
+			    background-color: #fff;
+			}
+			/*  ----------列名行样式开始-------  */
+			.cartbox_common_headbar {
+			    padding-left: 28px;
+			    height: 25px;
+			    font: normal normal normal 12px/20px Rubik-Regular,PingFang SC,PingHei,PingFangHei,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,STHeiTi,sans-serif;
+			    color: #666;
+			    background-color: #fbfbfb;
+			    box-shadow: inset 0 1px 0 0 rgba(0,0,0,.05),inset 0 -1px 0 0 rgba(0,0,0,.05);
+			}
+			.cartbox_common_headbar_item {
+			    display: inline-block;
+			    height: 15px;
+			    margin: 2px;
+			}
+			
+			/* 列名-->>商品名称样式  */
+			.cbt_name {
+			    width: 13%;
+			    padding-left: 29px;
+			}
+			
+			/*    列名-->>商品价格、小计、数量、样式       */
+			.cbt_num, .cbt_op, .cbt_price, .cbt_total {
+			    text-align: left;
+			    padding-left: 94px;
+			}
+			.cbt_price {
+			    width: 3%;
+			}
+			.cbt_num, .cbt_total {
+			    width: 5%;
+			}
+			/*  ----------列名行样式结束-------  */
+			
+			/* ------>>> 购物车列样式开始 <<<------- */
+			.cartbox_common_main {
+			    display: table;
+			    height: 42px;
+			    padding: 0px 33px 0px;
+			    width: 1000px;
+			}
+			.cartbox_common_bg {
+			    box-shadow: inset 0 -1px 0 0 rgba(0,0,0,.05);
+			}
+			.cartbox_common_content_item {
+			    display: table-cell;
+			    height: 39px;
+			    vertical-align: middle;
+			}
+			.cartbox_common_chkbox {
+			    width: 30px;
+			    text-align: center;
+			    position: relative;
+			}
+			.refresh_checkbox {
+			    z-index: 99;
+			    -webkit-appearance: none;
+			    appearance: none;
+			    width: 22px;
+			    height: 29px;
+			    margin: 0;
+			    cursor: pointer;
+			    vertical-align: bottom;
+			    background: #fff;
+			    border: 1px solid #ccccd6;
+			    border-radius: 50%;
+			    box-sizing: border-box;
+			    position: relative;
+			    background-color: transparent;
+			    opacity: 0;
+			}
+			.refresh_checkbox {
+			    z-index: 99;
+			    -webkit-appearance: none;
+			    appearance: none;
+			    width: 22px;
+			    height: 22px;
+			    margin: 0;
+			    cursor: pointer;
+			    vertical-align: bottom;
+			    background: #fff;
+			    border: 1px solid #ccccd6;
+			    border-radius: 50%;
+			    box-sizing: border-box;
+			    position: relative;
+			    background-color: transparent;
+			}
+			input[type="checkbox"] {
+			    border-style: solid;
+			    border-radius: 30px;
+			}
+			input.refresh_checkbox[type="checkbox"]:checked {
+			    border: none;
+			}
+			.cartbox_common_icon_right {
+			    z-index: 89;
+			    position: absolute;
+			    left: 0;
+			    vertical-align: middle;
+			    margin-left: 4px;
+			    width: 22px;
+			    height: 22px;
+			    display: inline-block;
+			}
+			label {
+			    display: inline-block;
+			    background: url("/kpImg/false.png")no-repeat;
+			 }
+			input.refresh_checkbox[type="checkbox"]:checked + label {
+		    	background: url("/kpImg/true.png")no-repeat;
+		    }
+		    input.refresh_checkbox[type="checkbox"]:checked + label {
+			    display: inline;
+			}
+			.cartbox_common_desc {
+			    width: 110px;
+			    text-align: left;
+			}
+			.cartbox_common_img, .cartbox_common_img_nostock {
+			    width: 40px;
+			    height: 37px;
+			    margin: 0px;
+			    text-align: center;
+			}
+			.cartbox_common_img {
+			    border: 1px solid #eee;
+			    border-radius: 4px;
+			    position: relative;
+				left: 22px;
+			}
+			.hidden {
+			    display: none;
+			}
+			.cartbox_common_img_nostock {
+			    border: 1px solid #ccccd6;
+			    
+			}
+			.cartbox_common_img_nostock > span {
+			    margin-top: 72px;
+			    display: inline-block;
+			    width: 90px;
+			    font: normal normal normal 12px Rubik-Regular,PingFang SC,PingHei,PingFangHei,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,STHeiTi,sans-serif;
+			    color: #fff;
+			    background-color: #000;
+			    opacity: .3;
+			}
+			
+			.cartbox_common_title {
+			    width: 179px;
+			    text-align: left;
+			}
+			.cartbox_common_tablewrap {
+			    display: table-cell;
+			    vertical-align: middle;
+			    height: 38px;
+			}
+			.cartbox_common_name {
+			    display: block;
+			    margin-bottom: 6px;
+			    font: normal normal normal 11px Rubik-Regular,PingFang SC,PingHei,PingFangHei,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,STHeiTi,sans-serif;
+			    color: #333;
+			}
+			.cartbox_common_price {
+			    width: 128px;
+			    text-align: left;
+			    position:relative;
+			    right: 55px;
+			    font-size:11px;
+			}
+			.cartbox_common_newprice, .cartbox_common_num, .cartbox_common_oldprice, .cartbox_common_totalprice {
+			    font: normal normal normal 16px/18px Rubik-Regular,PingFang SC,PingHei,PingFangHei,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,STHeiTi,sans-serif;
+			    color: #4a4a4a;
+			}
+			.cartbox_common_newprice {
+			    margin-bottom: 6px;
+			}
+			.cartbox_common_addsub {
+			    text-align: left;
+			    position:relative;
+			    right: 78px;
+			}
+			.cartbox_common_addsub_box {
+			    width: 110px;
+			    height: 28px;
+			    border: 1px solid #ccc;
+			    border-radius: 4px;
+			    margin-left: 15px;
+			}
+			
+			.cartbox_common_btn {
+			    display: inline-block;
+			    line-height: 130px;
+			    text-align: center;
+			    position: relative;
+			    background-color: transparent;
+			    cursor: pointer;
+			}
+			.cartbox_common_addsub_box .cartbox_common_btn {
+			    line-height: 22px;
+			}
+			.cartbox_common_addsub_box > .box_item {
+			    width: 32.5%;
+			    display: inline-block;
+			    height: 28px;
+			    line-height: 28px;
+			    text-align: center;
+			    float: left;
+			    color: #ccc;
+			    font-size: 16px;
+			}
+			.cartbox_common_num {
+			    display: inline-block;
+			    line-height: 28px;
+			}
+			.cartbox_common_addsub_box .cartbox_common_num {
+			    color: #111;
+			    border-left: 1px solid #ccc;
+			    border-right: 1px solid #ccc;
+			}
+			.cartbox_common_addsub_box > .box_item:hover {
+			    color: #111;
+			}
+			
+			.cartbox_common_totalprice {
+			    width: 55px;
+			    text-align: left;
+			}
+			/* >>> 购物车列样式结束 <<< */
+			
+			/*  -- 购物车结算行样式、start-- */
+			.cartbox_settle {
+			    margin: 0 auto;
+			    background-color: #fff;
+			    box-shadow: 0 0 0px 3px hsla(0,0%,96%,.6);
+			}
+			.cartbox_settle_main {
+			    display: table;
+			    height: 110px;
+			    padding: 0 30px;
+			}
+			.cartbox_settle_content_item {
+			    display: table-cell;
+			    height: 110px;
+			    vertical-align: middle;
+			}
+			.cartbox_settle_chkbox {
+			    width: 30px;
+			    text-align: center;
+			    position: relative;
+			    z-index: 79;
+			}
+			
+			/*
+			.iconBlue {
+			    color: #55a0ff;
+			    background-image: #55a0ff;
+			    background: -webkit-linear-gradient(#64c8ff,#7d7dff);
+			    -webkit-background-clip: text;
+			}
+			.iconBlue, .iconGray {
+			    font-family: Glyphter;
+			    font-size: 22px;
+			    -webkit-text-fill-color: transparent;
+			}
+			.iconBlue, .iconGray {
+			    font-family: Glyphter;
+			    font-size: 18px;
+			    -webkit-text-fill-color: transparent;
+			}
+			*/
+			.cartbox_settle_chkbox > label {
+			    top: 44px;
+			}
+			.cartbox_settle_desc {
+			    width: 306px;
+			    padding-left: 25px;
+			    text-align: left;
+			}
+			.cartbox_settle_name {
+			    display: block;
+			}
+			.cartbox_settle_allchoose {
+			    margin-right: 60px;
+			}
+			.cartbox_settle_allchoose, .cartbox_settle_name {
+			    font: normal normal normal 12px Rubik-Regular,PingFang SC,PingHei,PingFangHei,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,STHeiTi,sans-serif;
+			}
+			.cartbox_settle_choosen_num, .cartbox_settle_size {
+			    color: #55a0ff;
+			    margin: 0 6px;
+			    font: normal normal normal 16px Rubik-Regular,PingFang SC,PingHei,PingFangHei,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,STHeiTi,sans-serif;
+			}
+			.cartbox_settle_price {
+			    width: 300px;
+			    text-align: right;
+			    padding-right: 60px;
+			}
+			.cartbox_settle_sumprice_title {
+			    color: #333;
+			    font: normal normal normal 16px Rubik-Regular,PingFang SC,PingHei,PingFangHei,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,STHeiTi,sans-serif;
+			    margin-bottom: 5px;
+			}
+			.cartbox_settle_sumprice {
+			    font: normal normal normal 22px Rubik-Regular,PingFang SC,PingHei,PingFangHei,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,STHeiTi,sans-serif;
+			    color: #55a0ff;
+			}
+			cartbox_settle_discount {
+			    color: #999;
+			    font: normal normal normal 12px Rubik-Regular,PingFang SC,PingHei,PingFangHei,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,STHeiTi,sans-serif;
+			}
+			.cartbox_settle_btn {
+			    display: inline-block;
+			    border: none;
+			    text-align: center;
+			    width: 88px;
+			    height: 35px;
+			    margin-top: 25px;
+			    border-radius: 4px;
+			    color: #fff;
+			    cursor: pointer;
+			    font: normal normal normal 13px/36px Rubik-Regular,PingFang SC,PingHei,PingFangHei,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,STHeiTi,sans-serif;
+			    background: #39a9ff;
+			    background: -webkit-gradient(linear,0 50%,100% 50%,from(#7384ff),to(#36abff));
+			    background: -webkit-linear-gradient(left,#7384ff,#39a9ff 100%,#36abff);
+			    background: linear-gradient(left,#7384ff,#39a9ff 100%,#36abff);
+			}
+			
+			.search{
+				width:240px;
+				height:28px;
+				position:relative;
+				left:452px;
+				bottom:18px;
+				background-color: #effcf5;
+				border-radius:3px;
+				
+			}
+			.search_button_div{
+				width:48px;
+				height:28px;
+				background-color: #c5c7d8;
+				position:relative;
+				left:769px;
+				bottom:65px;
+				border-radius:4px;
+			}
+			.search_button_div_p{
+				position:relative;
+				bottom:20px;
+				left:5px;
+			}
+			#cgsp{
+				position: relative;
+		    	bottom: 15px;
+		
+			}
+			#bh{
+				position: relative;
+				left: 69px;
+			}
+			
+			#dj {
+			    position: relative;
+			    right: 27px;
+			}
+			#cz {
+			    position: relative;
+			    left: 32px;
+			}
+			.autocomplete-suggestion {
+				background: #f6f6f6;
+				cursor: pointer;
+			}			
+			.autocomplete-suggestion:hover {
+				background: #c1c1ff;
+			}
+			/*  -- 购物车结算行样式、stop -- */
+			
+			/* ---------->>>>>>>>>> main样式结束   <<<<<<<<----------*/
+			
+			/*---------->>>>>>>>>> footer样式开始 <<<<<<<<----------*/
+			#footer{background-color: gray;width: 100%;height:300px;}
+			/*---------->>>>>>>>>> footer样式结束 <<<<<<<<----------*/
+		</style>
+		

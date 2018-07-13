@@ -1,0 +1,243 @@
+.addreditbox {
+			    position: fixed;
+			    z-index: 9999;
+			    top: 0;
+			    left: 0;
+			    right: 0;
+			    bottom: 0;
+			    margin: auto;
+			    width: 720px;
+			    height: 480px;
+			    background:#aaddd7;
+			    font-size: 16px;
+			    box-shadow: 0 7px 10px 0 rgba(0,0,0,.05);
+			    border-radius: 4px;
+			    overflow: hidden;
+			}
+			.addreditbox_content {
+			    position: relative;
+			    z-index: 9999;
+			    /* background:#aaddd7; */
+			    background:#eef5ee;;
+			}
+			.addreditbox .addreditbox_title {
+			    height: 70px;
+			    line-height: 70px;
+			    color: #333;
+			    font-size: 18px;
+			    padding: 0 30px;
+			    box-shadow: 0 2px 8px 0 rgba(0,0,0,.05);
+			    position: relative;
+			}
+			.addreditbox .addreditbox_title .title-text {
+			    display: inline-block;
+			}
+			.addreditbox .addreditbox_title #addr-close-btn {
+			    opacity: .5;
+			    filter: alpha(opacity=50);
+			    cursor: pointer;
+			    float: right;
+			    height: 22px;
+			    width: 22px;
+			    line-height: 22px;
+			    margin-top: 24px;
+			    moz-user-select: -moz-none;
+			    -moz-user-select: none;
+			    -o-user-select: none;
+			    -webkit-user-select: none;
+			    -ms-user-select: none;
+			    user-select: none;
+			}
+			.addreditbox .addreditbox_content_item {
+			    height: 410px;
+			    padding: 30px;
+			}
+			.addreditbox .addreditbox_content_item div {
+			    margin-bottom: 20px;
+			}
+			.addreditbox .addreditbox_content_item .addr-inp1 {
+			    width: 208px;
+			}
+			.addreditbox .addreditbox_content_item .addr-inp1, .addreditbox .addreditbox_content_item .addr-inp2 {
+			    box-sizing: border-box;
+			    height: 44px;
+			    line-height: 44px;
+			    padding: 0 16px;
+			    font-size: 16px;
+			    border: 1px solid #ccccd6;
+			    border-radius: 4px;
+			}
+			.addreditbox .addreditbox_content_item .addr-inp2 {
+			    width: 434px;
+			    float: right;
+			}
+			.addreditbox .addreditbox_content_item .addr-select {
+			    position: relative;
+			    float: left;
+			    height: 46px;
+			    width: 208px;
+			    margin-right: 14px;
+			    border: 1px solid #ccccd6;
+			    border-radius: 4px;
+			    cursor: pointer;
+			}
+			.addreditbox .addreditbox_content_item .addr-select .select-title, .addreditbox .addreditbox_content_item .addr-select .select-title1 {
+			    box-sizing: border-box;
+			    height: 100%;
+			    width: 100%;
+			    border: 0;
+			    padding: 0 16px;
+			    outline: none;
+			    border-radius: 4px;
+			    font-size: 16px;
+			    line-height: 46px;
+			    cursor: pointer;
+			}
+			.addreditbox .addreditbox_content_item .addr-select .select-city, .addreditbox .addreditbox_content_item .addr-select .select-province {
+			    width: 100%;
+			    max-height: 150px !important;
+			    -webkit-max-height: 150px !important;
+			    overflow-y: auto !important;
+			    border: 1px solid #ccccd6;
+			    border-radius: 0 0 4px 4px;
+			    background: #fff;
+			    padding: 0;
+			    position: absolute;
+			    top: 31px;
+			    z-index: 9;
+			    left: -1px;
+			    display: none;
+			}
+			.addreditbox .addreditbox_content_item .addr-select span {
+			    position: absolute;
+			    font-size: 16px;
+			    right: 16px;
+			    top: 16px;
+			    moz-user-select: -moz-none;
+			    -moz-user-select: none;
+			    -o-user-select: none;
+			    -webkit-user-select: none;
+			    -ms-user-select: none;
+			    user-select: none;
+			}
+			.addreditbox .iconBlue, .addreditbox .iconGray {
+			    font-family: Glyphter;
+			    font-size: 22px;
+			    -webkit-text-fill-color: transparent;
+			}
+			.addreditbox .iconGray {
+			    color: #ccccd6;
+			    background-image: #ccccd6;
+			    background: -webkit-linear-gradient(#eeeef3,#ccccd6);
+			    -webkit-background-clip: text;
+			}
+			.iconBlue, .iconGray {
+			    font-family: Glyphter;
+			    font-size: 18px;
+			    -webkit-text-fill-color: transparent;
+			}
+			.iconGray {
+			    color: #ccccd6;
+			    background-image: #ccccd6;
+			    background: -webkit-linear-gradient(#eeeef3,#ccccd6);
+			    -webkit-background-clip: text;
+			}
+			.addreditbox .addreditbox_content_item .addr-select .select-city li, .addreditbox .addreditbox_content_item .addr-select .select-province li {
+			    clear: both;
+			    list-style: none;
+			    padding-left: 15px;
+			    line-height: 25px;
+			    cursor: pointer;
+			}
+			.addreditbox .addreditbox_content_item .addr-select-last {
+			    float: left;
+			    position: relative;
+			    box-sizing: border-box;
+			    height: 48px;
+			    width: 210px;
+			    margin-right: 0;
+			    border: 1px solid #ccccd6;
+			    border-radius: 4px;
+			    cursor: pointer;
+			}
+			.addreditbox .addreditbox_content_item .addr-select-last .select-title2 {
+			    box-sizing: border-box;
+			    height: 100%;
+			    width: 100%;
+			    border: 0;
+			    padding-left: 16px;
+			    outline: none;
+			    border-radius: 4px;
+			    font-size: 16px;
+			    line-height: 46px;
+			}
+			.addreditbox .addreditbox_content_item .addr-select-last .select-country {
+			    width: 100%;
+			    max-height: 150px !important;
+			    -webkit-max-height: 150px !important;
+			    overflow-y: auto !important;
+			    border: 1px solid #ccccd6;
+			    border-radius: 0 0 4px 4px;
+			    background: #fff;
+			    padding: 0;
+			    position: absolute;
+			    top: 31px;
+			    z-index: 9;
+			    left: -1px;
+			    display: n
+			}
+			.addreditbox .addreditbox_content_item .addr-select-last span {
+			    position: absolute;
+			    font-size: 16px;
+			    right: 16px;
+			    top: 16px;
+			    moz-user-select: -moz-none;
+			    -moz-user-select: none;
+			    -o-user-select: none;
+			    -webkit-user-select: none;
+			    -ms-user-select: none;
+			    user-select: none;
+			}
+			.addreditbox .addreditbox_content_item .addr-textarea {
+			    box-sizing: border-box;
+			    height: 90px;
+			    width: 660px;
+			    padding: 16px;
+			    font-size: 16px;
+			    resize: none;
+			    border: 1px solid #ccccd6;
+			    border-radius: 4px;
+			    overflow: hidden;
+			}
+			.addreditbox .addreditbox_content_item .default-Addr {
+			    height: 22px;
+			    line-height: 22px;
+			}
+			.addreditbox .addreditbox_content_item .default-Addr .check-choice {
+			    height: 22px;
+			    width: 22px;
+			    position: relative;
+			    float: left;
+			    margin-right: 6px;
+			    line-height: 22px;
+			    moz-user-select: -moz-none;
+			    -moz-user-select: none;
+			    -o-user-select: none;
+			    -webkit-user-select: none;
+			    -ms-user-select: none;
+			    user-select: none;
+			}
+			.addreditbox .addreditbox_content_item #save-addr-btn {
+			    width: 120px;
+			    height: 50px;
+			    border: 0;
+			    color: #fff;
+			    font-size: 16px;
+			    outline: none;
+			    cursor: pointer;
+			    float: right;
+			    background: #55a0ff;
+			    background: -webkit-linear-gradient(90deg,#7d7dff,#64c8ff);
+			    background: linear-gradient(90deg,#7d7dff,#64c8ff);
+			    border-radius: 4px;
+			}

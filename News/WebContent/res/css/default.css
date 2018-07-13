@@ -1,0 +1,70 @@
+@CHARSET "UTF-8";
+/* ===>>> 默认的css初始化 <<<=== */
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+	text-rendering: optimizeLegibility;
+}
+ul{
+	list-style: none;
+}
+
+a{text-decoration: none;}
+.spanSJX{
+	border: 10px solid transparent;
+	border-bottom: 10px solid #fff;
+	position: absolute;
+	top: -19px;
+	right: 20px;
+}
+
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+a {
+    text-decoration: none!important;
+}
+div {
+	display: block;
+}
+a img {
+    border: none;
+}
+input {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    outline: none;
+    padding: 0;
+    border: none;
+    width: 100%;
+}
+i{
+    display: inline-block;
+	width: 20px;
+	height: 18px;
+}
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+ol, ul {
+    list-style: none;
+}
+li, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
